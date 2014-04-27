@@ -33,30 +33,30 @@ http://www.mulesoft.org/schema/mule/ee/data-mapper http://www.mulesoft.org/schem
 
     <data-mapper:config name="event_to_event" transformationGraphPath="event_to_event.grf" doc:name="event_to_event"/>
 
-    <flow name="authorize-facebook" doc:name="authorize-facebook">
+    <flow name="authorize-facebook" doc:name="authorize-facebook" doc:description="User authorizes MuleSample Facebook App via OAuth2.">
         <http:inbound-endpoint exchange-pattern="request-response" host="localhost" port="8081" path="authorize-facebook" doc:name="/authorize-facebook" doc:description="Listen for Facebook OAuth requests."/>
-        <facebook:authorize config-ref="Facebook" doc:name="Authorize"/>
-        <http:response-builder status="200" contentType="text/plain" doc:name="HTTP Response Builder">
+        <facebook:authorize config-ref="Facebook" doc:name="Authorize" doc:description="Request an OAuth access token."/>
+        <http:response-builder status="200" contentType="text/plain" doc:name="HTTP Response Builder" doc:description="Build HTTP Response with the token id.">
 			<set-payload value="You have successfully authorized the Facebook connector. You access token id is #[flowVars['OAuthAccessTokenId']]"/>
         </http:response-builder>
     </flow>
 
-    <flow name="authorize-google-calendar" doc:name="authorize-google-calendar">
+    <flow name="authorize-google-calendar" doc:name="authorize-google-calendar" doc:description="User authorizes MuleSample Google App via OAuth2.">
         <http:inbound-endpoint exchange-pattern="request-response" host="localhost" port="8081" path="authorize-google" doc:name="/authorize-google" doc:description="Listen for Google Calendar OAuth requests."/>
-        <google-calendars:authorize config-ref="Google_Calendars" access_type="offline" doc:name="Authorize"/>
-        <http:response-builder status="200" contentType="text/plain" doc:name="HTTP Response Builder">
+        <google-calendars:authorize config-ref="Google_Calendars" access_type="offline" doc:name="Authorize" doc:description="Request an OAuth access token."/>
+        <http:response-builder status="200" contentType="text/plain" doc:name="HTTP Response Builder" doc:description="Build HTTP Response with the token id.">
 			<set-payload value="You have successfully authorized the Facebook connector. You access token id is #[flowVars['OAuthAccessTokenId']]"/>
         </http:response-builder>
     </flow>
 
-    <flow name="add-events" doc:name="add-events">
+    <flow name="add-events" doc:name="add-events" doc:description="User wants to add incoming Facebook events to a Google Calendar.">
         <http:inbound-endpoint exchange-pattern="request-response" host="localhost" port="8081" path="add-events" doc:name="/add-events" doc:description="Main listener."/>
         <facebook:get-user-events config-ref="Facebook" limit="10" since="today" until="+1 week" user="me" accessTokenId="#[header:INBOUND:fbTokenId]" doc:name="Get user events" doc:description="Query Facebook Graph API and fetch user events."/>
         <foreach doc:name="For Each">
             <data-mapper:transform config-ref="event_to_event" doc:name="Faccebook to Google Event"/>
             <google-calendars:insert-event config-ref="Google_Calendars" calendarId="primary" doc:name="Insert Event" doc:description="Add event to primary calendar." accessTokenId="#[header:INBOUND:gTokenId]"/>
         </foreach>
-        <http:response-builder status="200" contentType="text/plain" doc:name="HTTP Response Builder">
+        <http:response-builder status="200" contentType="text/plain" doc:name="HTTP Response Builder" doc:description="Build final HTTP Response.">
 			<set-payload value="All Facebook events where added to your Google Calendar"/>
         </http:response-builder>
     </flow>

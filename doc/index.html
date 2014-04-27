@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>facebook2google-events · Mule Studio Documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="assets/bootstrap.css" rel="stylesheet">
+    <link href="assets/bootstrap-responsive.css" rel="stylesheet">
+    <link href="assets/docs.css" rel="stylesheet">
+    <link href="assets/prettify.css" rel="stylesheet">
+
+    <script src="assets/track.js" data-site-id="4f0dc9fef5a1f55508000013" id="gauges-tracker" async="" type="text/javascript"></script><script src="assets/ga.js" async="" type="text/javascript"></script><script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-146052-10']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </head>
+
+  <body data-twttr-rendered="true" data-spy="scroll" data-target=".bs-docs-sidebar"><iframe style="display: none;" id="rufous-sandbox" name="uid13460061790411"></iframe>
+
+    <!-- Navbar
+    ================================================== -->
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand pull-left" href="#">facebook2google-events</a>
+          <div class="nav-collapse collapse">
+            <p class="navbar-text pull-right">
+              <a href="http://www.mulesoft.com" class="navbar-link">
+                <img src="./assets/images/mulesoft-logo-final.png" alt="MuleSoft" id="mulesoftlogo">
+              </a>
+            </p>
+            <ul class="nav">
+                                                                    <li class="active"><a href="./index.html">
+                      <span class="en">facebook2google-events</span>
+                    </a></li>
+                                                              </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+  <header class="jumbotron subhead" id="overview">
+    <div class="container">
+      <h1>facebook2google-events</h1>
+    </div>
+  </header>
+
+  <div class="container">
+
+    <!-- Docs nav
+    ================================================== -->
+    <div class="row">
+      <div class="span3 bs-docs-sidebar">
+        <ul class="nav nav-list bs-docs-sidenav affix">
+          <li class="nav-header">Flows</li>
+                      <li data-toggle="collapse" data-target="#_authorize_facebookNav"><a href="#_authorize_facebook"><i class="icon-chevron-right"></i> authorize-facebook</a>
+            </li>
+            <div id="_authorize_facebookNav" class="accordion-body collapse" style="height: 0px;">
+              <div class="accordion-inner">
+                <ul>
+                                                            <li><a href="#_authorize_facebook_authorize_facebook">/authorize-facebook</a></li>
+                                                                                <li><a href="#_authorize_facebookAuthorize">Authorize</a></li>
+                                                                                <li><a href="#_authorize_facebookHTTP_Response_Builder">HTTP Response Builder</a></li>
+                                                      </ul>
+              </div>
+            </div>
+                      <li data-toggle="collapse" data-target="#_authorize_google_calendarNav"><a href="#_authorize_google_calendar"><i class="icon-chevron-right"></i> authorize-google-calendar</a>
+            </li>
+            <div id="_authorize_google_calendarNav" class="accordion-body collapse" style="height: 0px;">
+              <div class="accordion-inner">
+                <ul>
+                                                            <li><a href="#_authorize_google_calendar_authorize_google">/authorize-google</a></li>
+                                                                                <li><a href="#_authorize_google_calendarAuthorize">Authorize</a></li>
+                                                                                <li><a href="#_authorize_google_calendarHTTP_Response_Builder">HTTP Response Builder</a></li>
+                                                      </ul>
+              </div>
+            </div>
+                      <li data-toggle="collapse" data-target="#_add_eventsNav"><a href="#_add_events"><i class="icon-chevron-right"></i> add-events</a>
+            </li>
+            <div id="_add_eventsNav" class="accordion-body collapse" style="height: 0px;">
+              <div class="accordion-inner">
+                <ul>
+                                                            <li><a href="#_add_events_add_events">/add-events</a></li>
+                                                                                <li><a href="#_add_eventsGet_user_events">Get user events</a></li>
+                                                                                                                                                            <li><a href="#_add_events_For_EachInsert_Event">Insert Event</a></li>
+                                                                                <li><a href="#_add_eventsHTTP_Response_Builder">HTTP Response Builder</a></li>
+                                                      </ul>
+              </div>
+            </div>
+                  </ul>
+      </div>
+      <div class="span9">
+
+        <!-- Elements and their descriptions
+        ================================================== -->
+        <div style="max-height: 640px;width:100%;overflow:auto;">
+                      <img src="img/facebook2google-events.png" usemap="#mFlowMap" alt="Mule Configuration Image">
+            <map name="mFlowMap">
+                                                            <area shape="rect" coords="21,33,173,206" href="#_authorize_facebook_authorize_facebook">
+                                                                <area shape="rect" coords="233,33,313,104" href="#_authorize_facebookAuthorize">
+                                                                <area shape="rect" coords="373,33,541,104" href="#_authorize_facebookHTTP_Response_Builder">
+                                                                                          <area shape="rect" coords="21,276,155,449" href="#_authorize_google_calendar_authorize_google">
+                                                                <area shape="rect" coords="215,276,295,347" href="#_authorize_google_calendarAuthorize">
+                                                                <area shape="rect" coords="355,276,523,347" href="#_authorize_google_calendarHTTP_Response_Builder">
+                                                                                          <area shape="rect" coords="21,543,115,739" href="#_add_events_add_events">
+                                                                <area shape="rect" coords="175,543,292,614" href="#_add_eventsGet_user_events">
+                                                                                                                            <area shape="rect" coords="621,545,714,616" href="#_add_events_For_EachInsert_Event">
+                                                                <area shape="rect" coords="788,543,956,614" href="#_add_eventsHTTP_Response_Builder">
+                                                    </map>
+                  </div>
+        <!--Mule configuration xml code-->
+        <div class="accordion-heading">
+          <a class="accordion-toggle" data-toggle="collapse" href="#collapseMuleConfiguration">
+            Show Mule Configuration XML code...
+          </a>
+        </div>
+        <div id="collapseMuleConfiguration" class="accordion-body collapse" style="height: 0px;">
+          <div class="accordion-inner">
+              <pre class="prettyprint"><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;mule xmlns="http://www.mulesoft.org/schema/mule/core" version="EE-3.4.1"&gt;
+    &lt;context:property-placeholder xmlns:context="http://www.springframework.org/schema/context" location="mule.properties"&gt; &lt;/context:property-placeholder&gt;
+    &lt;facebook:config-with-oauth xmlns:facebook="http://www.mulesoft.org/schema/mule/facebook" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" name="Facebook" appId="${facebookAppId}" appSecret="${facebookAppSecret}" scope="email,user_events" doc:name="Facebook"&gt;
+        &lt;facebook:oauth-callback-config domain="${domain}" localPort="8081" remotePort="8081"/&gt;
+    &lt;/facebook:config-with-oauth&gt;
+    &lt;google-calendars:config-with-oauth xmlns:google-calendars="http://www.mulesoft.org/schema/mule/google-calendars" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" name="Google_Calendars" consumerKey="${googleAppId}" consumerSecret="${googleAppSecret}" doc:name="Google Calendars"&gt;
+        &lt;google-calendars:oauth-callback-config domain="${domain}" localPort="8081" remotePort="8081" path="redirect"/&gt;
+    &lt;/google-calendars:config-with-oauth&gt;
+    &lt;data-mapper:config xmlns:data-mapper="http://www.mulesoft.org/schema/mule/ee/data-mapper" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" name="event_to_event" transformationGraphPath="event_to_event.grf" doc:name="event_to_event"&gt;  &lt;/data-mapper:config&gt;
+    &lt;flow xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" name="authorize-facebook" doc:name="authorize-facebook" doc:description="User authorizes MuleSample Facebook App via OAuth2."&gt;
+        &lt;http:inbound-endpoint xmlns:http="http://www.mulesoft.org/schema/mule/http" exchange-pattern="request-response" host="localhost" port="8081" path="authorize-facebook" doc:name="/authorize-facebook" doc:description="Listen for Facebook OAuth requests."&gt;   &lt;/http:inbound-endpoint&gt;
+        &lt;facebook:authorize xmlns:facebook="http://www.mulesoft.org/schema/mule/facebook" config-ref="Facebook" doc:name="Authorize" doc:description="Request an OAuth access token."&gt;  &lt;/facebook:authorize&gt;
+        &lt;http:response-builder xmlns:http="http://www.mulesoft.org/schema/mule/http" status="200" contentType="text/plain" doc:name="HTTP Response Builder" doc:description="Build HTTP Response with the token id."&gt;   &lt;/http:response-builder&gt;
+    &lt;/flow&gt;
+    &lt;flow xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" name="authorize-google-calendar" doc:name="authorize-google-calendar" doc:description="User authorizes MuleSample Google App via OAuth2."&gt;
+        &lt;http:inbound-endpoint xmlns:http="http://www.mulesoft.org/schema/mule/http" exchange-pattern="request-response" host="localhost" port="8081" path="authorize-google" doc:name="/authorize-google" doc:description="Listen for Google Calendar OAuth requests."&gt;    &lt;/http:inbound-endpoint&gt;
+        &lt;google-calendars:authorize xmlns:google-calendars="http://www.mulesoft.org/schema/mule/google-calendars" config-ref="Google_Calendars" access_type="offline" doc:name="Authorize" doc:description="Request an OAuth access token."&gt;    &lt;/google-calendars:authorize&gt;
+        &lt;http:response-builder xmlns:http="http://www.mulesoft.org/schema/mule/http" status="200" contentType="text/plain" doc:name="HTTP Response Builder" doc:description="Build HTTP Response with the token id."&gt;   &lt;/http:response-builder&gt;
+    &lt;/flow&gt;
+    &lt;flow xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" name="add-events" doc:name="add-events" doc:description="User wants to add incoming Facebook events to a Google Calendar."&gt;
+        &lt;http:inbound-endpoint xmlns:http="http://www.mulesoft.org/schema/mule/http" exchange-pattern="request-response" host="localhost" port="8081" path="add-events" doc:name="/add-events" doc:description="Main listener."&gt;    &lt;/http:inbound-endpoint&gt;
+        &lt;facebook:get-user-events xmlns:facebook="http://www.mulesoft.org/schema/mule/facebook" config-ref="Facebook" limit="10" since="today" until="+1 week" user="me" accessTokenId="#[header:INBOUND:fbTokenId]" doc:name="Get user events" doc:description="Query Facebook Graph API and fetch user events."&gt;  &lt;/facebook:get-user-events&gt;
+        &lt;foreach doc:name="For Each"&gt;
+            &lt;data-mapper:transform xmlns:data-mapper="http://www.mulesoft.org/schema/mule/ee/data-mapper" config-ref="event_to_event" doc:name="Faccebook to Google Event"&gt; &lt;/data-mapper:transform&gt;
+            &lt;google-calendars:insert-event xmlns:google-calendars="http://www.mulesoft.org/schema/mule/google-calendars" config-ref="Google_Calendars" calendarId="primary" accessTokenId="#[header:INBOUND:gTokenId]" doc:name="Insert Event" doc:description="Add event to primary calendar."&gt;    &lt;/google-calendars:insert-event&gt;
+        &lt;/foreach&gt;
+        &lt;http:response-builder xmlns:http="http://www.mulesoft.org/schema/mule/http" status="200" contentType="text/plain" doc:name="HTTP Response Builder" doc:description="Build final HTTP Response."&gt;   &lt;/http:response-builder&gt;
+    &lt;/flow&gt;
+&lt;/mule&gt;
+</code></pre>
+
+          </div>
+        </div>
+
+                  <section id="_authorize_facebook">
+            <div class="page-header">
+                <h1>authorize-facebook <img src="./assets/icons/flow.png"></h1>
+            </div>
+            <div class="documentation-indented" style="height:100%;width:100%;overflow:auto;">
+                              <img src="img/authorize-facebook.png" usemap="#flowMapauthorize-facebook" alt="authorize-facebook image">
+                <map name="flowMapauthorize-facebook">
+                                                            <area shape="rect" coords="14,26,166,199" href="#_authorize_facebook_authorize_facebook">  
+                                                                                <area shape="rect" coords="226,26,306,97" href="#_authorize_facebookAuthorize">  
+                                                                                <area shape="rect" coords="366,26,534,97" href="#_authorize_facebookHTTP_Response_Builder">  
+                                                      </map>
+                          </div>
+            <div class="documentation-indented">
+              <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" href="#_authorize_facebookxml_code">
+                  Show configuration XML code of the flow authorize-facebook...
+                </a>
+              </div>
+              <div id="_authorize_facebookxml_code" class="accordion-body collapse" style="height: 0px;">
+                <div class="accordion-inner">
+                    <pre class="prettyprint"><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;flow name="authorize-facebook"&gt;
+    &lt;http:inbound-endpoint exchange-pattern="request-response" host="localhost" port="8081" path="authorize-facebook"&gt;  &lt;/http:inbound-endpoint&gt;
+    &lt;facebook:authorize config-ref="Facebook"&gt;  &lt;/facebook:authorize&gt;
+    &lt;http:response-builder status="200" contentType="text/plain"&gt;   &lt;/http:response-builder&gt;
+&lt;/flow&gt;
+</code></pre>
+
+                </div>
+              </div>
+              <p><p>User authorizes MuleSample Facebook App via OAuth2.</p>
+</p>
+            </div>
+                                          <ul id="_authorize_facebook_authorize_facebook" class="breadcrumb">
+                                  <li><span class="gray-link"><a href="#_authorize_facebook">authorize-facebook</a> </span> <span class="divider">/</span></li>
+                                <li class="active">/authorize-facebook</li>
+                <img src="./assets/icons/http.png" alt="">
+                </ul>
+                <div class="documentation-indented">
+                  <div class="accordion-heading">
+                                        <a class="accordion-toggle" data-toggle="collapse" href="#_authorize_facebook_authorize_facebookxml_code">
+                      Show configuration XML code of the element /authorize-facebook...
+                    </a>
+                  </div>
+                  <div id="_authorize_facebook_authorize_facebookxml_code" class="accordion-body collapse" style="height: 0px;">
+                    <div class="accordion-inner">
+                        <pre class="prettyprint"><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;http:inbound-endpoint exchange-pattern="request-response" host="localhost" port="8081" path="authorize-facebook"&gt;  &lt;/http:inbound-endpoint&gt;
+</code></pre>
+
+                    </div>
+                  </div>
+                  <p><p>Listen for Facebook OAuth requests.</p>
+</p>
+                </div>
+                                                        <ul id="_authorize_facebookAuthorize" class="breadcrumb">
+                                  <li><span class="gray-link"><a href="#_authorize_facebook">authorize-facebook</a> </span> <span class="divider">/</span></li>
+                                <li class="active">Authorize</li>
+                <img src="./assets/icons/transformer.png" alt="">
+                </ul>
+                <div class="documentation-indented">
+                  <div class="accordion-heading">
+                                        <a class="accordion-toggle" data-toggle="collapse" href="#_authorize_facebookAuthorizexml_code">
+                      Show configuration XML code of the element Authorize...
+                    </a>
+                  </div>
+                  <div id="_authorize_facebookAuthorizexml_code" class="accordion-body collapse" style="height: 0px;">
+                    <div class="accordion-inner">
+                        <pre class="prettyprint"><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;facebook:authorize config-ref="Facebook"&gt;  &lt;/facebook:authorize&gt;
+</code></pre>
+
+                    </div>
+                  </div>
+                  <p><p>Request an OAuth access token.</p>
+</p>
+                </div>
+                                                        <ul id="_authorize_facebookHTTP_Response_Builder" class="breadcrumb">
+                                  <li><span class="gray-link"><a href="#_authorize_facebook">authorize-facebook</a> </span> <span class="divider">/</span></li>
+                                <li class="active">HTTP Response Builder</li>
+                <img src="./assets/icons/transformer.png" alt="">
+                </ul>
+                <div class="documentation-indented">
+                  <div class="accordion-heading">
+                                        <a class="accordion-toggle" data-toggle="collapse" href="#_authorize_facebookHTTP_Response_Builderxml_code">
+                      Show configuration XML code of the element HTTP Response Builder...
+                    </a>
+                  </div>
+                  <div id="_authorize_facebookHTTP_Response_Builderxml_code" class="accordion-body collapse" style="height: 0px;">
+                    <div class="accordion-inner">
+                        <pre class="prettyprint"><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;http:response-builder status="200" contentType="text/plain"&gt;   &lt;/http:response-builder&gt;
+</code></pre>
+
+                    </div>
+                  </div>
+                  <p><p>Build HTTP Response with the token id.</p>
+</p>
+                </div>
+                                    </section>
+                  <section id="_authorize_google_calendar">
+            <div class="page-header">
+                <h1>authorize-google-calendar <img src="./assets/icons/flow.png"></h1>
+            </div>
+            <div class="documentation-indented" style="height:100%;width:100%;overflow:auto;">
+                              <img src="img/authorize-google-calendar.png" usemap="#flowMapauthorize-google-calendar" alt="authorize-google-calendar image">
+                <map name="flowMapauthorize-google-calendar">
+                                                            <area shape="rect" coords="14,26,148,199" href="#_authorize_google_calendar_authorize_google">  
+                                                                                <area shape="rect" coords="208,26,288,97" href="#_authorize_google_calendarAuthorize">  
+                                                                                <area shape="rect" coords="348,26,516,97" href="#_authorize_google_calendarHTTP_Response_Builder">  
+                                                      </map>
+                          </div>
+            <div class="documentation-indented">
+              <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" href="#_authorize_google_calendarxml_code">
+                  Show configuration XML code of the flow authorize-google-calendar...
+                </a>
+              </div>
+              <div id="_authorize_google_calendarxml_code" class="accordion-body collapse" style="height: 0px;">
+                <div class="accordion-inner">
+                    <pre class="prettyprint"><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;flow name="authorize-google-calendar"&gt;
+    &lt;http:inbound-endpoint exchange-pattern="request-response" host="localhost" port="8081" path="authorize-google"&gt;    &lt;/http:inbound-endpoint&gt;
+    &lt;google-calendars:authorize config-ref="Google_Calendars" access_type="offline"&gt;    &lt;/google-calendars:authorize&gt;
+    &lt;http:response-builder status="200" contentType="text/plain"&gt;   &lt;/http:response-builder&gt;
+&lt;/flow&gt;
+</code></pre>
+
+                </div>
+              </div>
+              <p><p>User authorizes MuleSample Google App via OAuth2.</p>
+</p>
+            </div>
+                                          <ul id="_authorize_google_calendar_authorize_google" class="breadcrumb">
+                                  <li><span class="gray-link"><a href="#_authorize_google_calendar">authorize-google-calendar</a> </span> <span class="divider">/</span></li>
+                                <li class="active">/authorize-google</li>
+                <img src="./assets/icons/http.png" alt="">
+                </ul>
+                <div class="documentation-indented">
+                  <div class="accordion-heading">
+                                        <a class="accordion-toggle" data-toggle="collapse" href="#_authorize_google_calendar_authorize_googlexml_code">
+                      Show configuration XML code of the element /authorize-google...
+                    </a>
+                  </div>
+                  <div id="_authorize_google_calendar_authorize_googlexml_code" class="accordion-body collapse" style="height: 0px;">
+                    <div class="accordion-inner">
+                        <pre class="prettyprint"><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;http:inbound-endpoint exchange-pattern="request-response" host="localhost" port="8081" path="authorize-google"&gt;    &lt;/http:inbound-endpoint&gt;
+</code></pre>
+
+                    </div>
+                  </div>
+                  <p><p>Listen for Google Calendar OAuth requests.</p>
+</p>
+                </div>
+                                                        <ul id="_authorize_google_calendarAuthorize" class="breadcrumb">
+                                  <li><span class="gray-link"><a href="#_authorize_google_calendar">authorize-google-calendar</a> </span> <span class="divider">/</span></li>
+                                <li class="active">Authorize</li>
+                <img src="./assets/icons/transformer.png" alt="">
+                </ul>
+                <div class="documentation-indented">
+                  <div class="accordion-heading">
+                                        <a class="accordion-toggle" data-toggle="collapse" href="#_authorize_google_calendarAuthorizexml_code">
+                      Show configuration XML code of the element Authorize...
+                    </a>
+                  </div>
+                  <div id="_authorize_google_calendarAuthorizexml_code" class="accordion-body collapse" style="height: 0px;">
+                    <div class="accordion-inner">
+                        <pre class="prettyprint"><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;google-calendars:authorize config-ref="Google_Calendars" access_type="offline"&gt;    &lt;/google-calendars:authorize&gt;
+</code></pre>
+
+                    </div>
+                  </div>
+                  <p><p>Request an OAuth access token.</p>
+</p>
+                </div>
+                                                        <ul id="_authorize_google_calendarHTTP_Response_Builder" class="breadcrumb">
+                                  <li><span class="gray-link"><a href="#_authorize_google_calendar">authorize-google-calendar</a> </span> <span class="divider">/</span></li>
+                                <li class="active">HTTP Response Builder</li>
+                <img src="./assets/icons/transformer.png" alt="">
+                </ul>
+                <div class="documentation-indented">
+                  <div class="accordion-heading">
+                                        <a class="accordion-toggle" data-toggle="collapse" href="#_authorize_google_calendarHTTP_Response_Builderxml_code">
+                      Show configuration XML code of the element HTTP Response Builder...
+                    </a>
+                  </div>
+                  <div id="_authorize_google_calendarHTTP_Response_Builderxml_code" class="accordion-body collapse" style="height: 0px;">
+                    <div class="accordion-inner">
+                        <pre class="prettyprint"><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;http:response-builder status="200" contentType="text/plain"&gt;   &lt;/http:response-builder&gt;
+</code></pre>
+
+                    </div>
+                  </div>
+                  <p><p>Build HTTP Response with the token id.</p>
+</p>
+                </div>
+                                    </section>
+                  <section id="_add_events">
+            <div class="page-header">
+                <h1>add-events <img src="./assets/icons/flow.png"></h1>
+            </div>
+            <div class="documentation-indented" style="height:100%;width:100%;overflow:auto;">
+                              <img src="img/add-events.png" usemap="#flowMapadd-events" alt="add-events image">
+                <map name="flowMapadd-events">
+                                                            <area shape="rect" coords="14,50,108,246" href="#_add_events_add_events">  
+                                                                                <area shape="rect" coords="168,50,285,121" href="#_add_eventsGet_user_events">  
+                                                                                                                                                            <area shape="rect" coords="614,52,707,123" href="#_add_events_For_EachInsert_Event">  
+                                                                                <area shape="rect" coords="781,50,949,121" href="#_add_eventsHTTP_Response_Builder">  
+                                                      </map>
+                          </div>
+            <div class="documentation-indented">
+              <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" href="#_add_eventsxml_code">
+                  Show configuration XML code of the flow add-events...
+                </a>
+              </div>
+              <div id="_add_eventsxml_code" class="accordion-body collapse" style="height: 0px;">
+                <div class="accordion-inner">
+                    <pre class="prettyprint"><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;flow name="add-events"&gt;
+    &lt;http:inbound-endpoint exchange-pattern="request-response" host="localhost" port="8081" path="add-events"&gt;  &lt;/http:inbound-endpoint&gt;
+    &lt;facebook:get-user-events config-ref="Facebook" limit="10" since="today" until="+1 week" user="me" accessTokenId="#[header:INBOUND:fbTokenId]"&gt; &lt;/facebook:get-user-events&gt;
+    &lt;foreach&gt;
+        &lt;data-mapper:transform config-ref="event_to_event"&gt; &lt;/data-mapper:transform&gt;
+        &lt;google-calendars:insert-event config-ref="Google_Calendars" calendarId="primary" accessTokenId="#[header:INBOUND:gTokenId]"&gt;   &lt;/google-calendars:insert-event&gt;
+    &lt;/foreach&gt;
+    &lt;http:response-builder status="200" contentType="text/plain"&gt;   &lt;/http:response-builder&gt;
+&lt;/flow&gt;
+</code></pre>
+
+                </div>
+              </div>
+              <p><p>User wants to add incoming Facebook events to a Google Calendar.</p>
+</p>
+            </div>
+                                          <ul id="_add_events_add_events" class="breadcrumb">
+                                  <li><span class="gray-link"><a href="#_add_events">add-events</a> </span> <span class="divider">/</span></li>
+                                <li class="active">/add-events</li>
+                <img src="./assets/icons/http.png" alt="">
+                </ul>
+                <div class="documentation-indented">
+                  <div class="accordion-heading">
+                                        <a class="accordion-toggle" data-toggle="collapse" href="#_add_events_add_eventsxml_code">
+                      Show configuration XML code of the element /add-events...
+                    </a>
+                  </div>
+                  <div id="_add_events_add_eventsxml_code" class="accordion-body collapse" style="height: 0px;">
+                    <div class="accordion-inner">
+                        <pre class="prettyprint"><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;http:inbound-endpoint exchange-pattern="request-response" host="localhost" port="8081" path="add-events"&gt;  &lt;/http:inbound-endpoint&gt;
+</code></pre>
+
+                    </div>
+                  </div>
+                  <p><p>Main listener.</p>
+</p>
+                </div>
+                                                        <ul id="_add_eventsGet_user_events" class="breadcrumb">
+                                  <li><span class="gray-link"><a href="#_add_events">add-events</a> </span> <span class="divider">/</span></li>
+                                <li class="active">Get user events</li>
+                <img src="./assets/icons/transformer.png" alt="">
+                </ul>
+                <div class="documentation-indented">
+                  <div class="accordion-heading">
+                                        <a class="accordion-toggle" data-toggle="collapse" href="#_add_eventsGet_user_eventsxml_code">
+                      Show configuration XML code of the element Get user events...
+                    </a>
+                  </div>
+                  <div id="_add_eventsGet_user_eventsxml_code" class="accordion-body collapse" style="height: 0px;">
+                    <div class="accordion-inner">
+                        <pre class="prettyprint"><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;facebook:get-user-events config-ref="Facebook" limit="10" since="today" until="+1 week" user="me" accessTokenId="#[header:INBOUND:fbTokenId]"&gt; &lt;/facebook:get-user-events&gt;
+</code></pre>
+
+                    </div>
+                  </div>
+                  <p><p>Query Facebook Graph API and fetch user events.</p>
+</p>
+                </div>
+                                                                                                            <ul id="_add_events_For_EachInsert_Event" class="breadcrumb">
+                                  <li><span class="gray-link"><a href="#_add_events">add-events</a> </span> <span class="divider">/</span></li>
+                                  <li><span class="gray-link"><a href="#_add_eventsFor_Each">For Each</a> </span> <span class="divider">/</span></li>
+                                <li class="active">Insert Event</li>
+                <img src="./assets/icons/transformer.png" alt="">
+                </ul>
+                <div class="documentation-indented">
+                  <div class="accordion-heading">
+                                        <a class="accordion-toggle" data-toggle="collapse" href="#_add_events_For_EachInsert_Eventxml_code">
+                      Show configuration XML code of the element Insert Event...
+                    </a>
+                  </div>
+                  <div id="_add_events_For_EachInsert_Eventxml_code" class="accordion-body collapse" style="height: 0px;">
+                    <div class="accordion-inner">
+                        <pre class="prettyprint"><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;google-calendars:insert-event config-ref="Google_Calendars" calendarId="primary" accessTokenId="#[header:INBOUND:gTokenId]"&gt;   &lt;/google-calendars:insert-event&gt;
+</code></pre>
+
+                    </div>
+                  </div>
+                  <p><p>Add event to primary calendar.</p>
+</p>
+                </div>
+                                                        <ul id="_add_eventsHTTP_Response_Builder" class="breadcrumb">
+                                  <li><span class="gray-link"><a href="#_add_events">add-events</a> </span> <span class="divider">/</span></li>
+                                <li class="active">HTTP Response Builder</li>
+                <img src="./assets/icons/transformer.png" alt="">
+                </ul>
+                <div class="documentation-indented">
+                  <div class="accordion-heading">
+                                        <a class="accordion-toggle" data-toggle="collapse" href="#_add_eventsHTTP_Response_Builderxml_code">
+                      Show configuration XML code of the element HTTP Response Builder...
+                    </a>
+                  </div>
+                  <div id="_add_eventsHTTP_Response_Builderxml_code" class="accordion-body collapse" style="height: 0px;">
+                    <div class="accordion-inner">
+                        <pre class="prettyprint"><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+
+&lt;http:response-builder status="200" contentType="text/plain"&gt;   &lt;/http:response-builder&gt;
+</code></pre>
+
+                    </div>
+                  </div>
+                  <p><p>Build final HTTP Response.</p>
+</p>
+                </div>
+                                    </section>
+              </div>
+    </div>
+  </div>
+
+<!-- Footer
+    ================================================== -->
+    <footer class="footer">
+      <div class="container">
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>Designed and built with <a href="http://www.mulesoft.com/mule-studio/" target="_blank">Mule Studio</a>.</p>
+        <p>Code licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>. Documentation licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+        <p>Icons from <a href="http://glyphicons.com/">Glyphicons Free</a>, licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+        <ul class="footer-links">
+          <li><a href="http://blogs.mulesoft.org/">Read the blog</a></li>
+          <li><a href="http://www.mulesoft.org/jira/browse/">Submit issues</a></li>
+        </ul>
+      </div>
+    </footer>
+
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="assets/widgets.js"></script>
+    <script src="assets/jquery.js"></script>
+    <script src="assets/prettify.js"></script>
+    <script src="assets/bootstrap-transition.js"></script>
+    <script src="assets/bootstrap-alert.js"></script>
+    <script src="assets/bootstrap-modal.js"></script>
+    <script src="assets/bootstrap-dropdown.js"></script>
+    <script src="assets/bootstrap-scrollspy.js"></script>
+    <script src="assets/bootstrap-tab.js"></script>
+    <script src="assets/bootstrap-tooltip.js"></script>
+    <script src="assets/bootstrap-popover.js"></script>
+    <script src="assets/bootstrap-button.js"></script>
+    <script src="assets/bootstrap-collapse.js"></script>
+    <script src="assets/bootstrap-carousel.js"></script>
+    <script src="assets/bootstrap-typeahead.js"></script>
+    <script src="assets/bootstrap-affix.js"></script>
+    <script src="assets/application.js"></script>
+
+</body>
+</html>
