@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="UTF-8"?><Graph author="nacho" created="Sun Apr 27 17:05:05 ART 2014" description="Event To Event" guiVersion="3.4.3.P" id="1398630471375" licenseCode="Unlicensed" licenseType="Unknown" modified="Sun Apr 27 17:05:05 ART 2014" modifiedBy="nacho" name="Event_To_Event" revision="1.0" showComponentDetails="false">
+<Global>
+<Metadata __index="2" __referenceCounter="0" __sourcePath="{}/object/attendees" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _metadataParentId="06b26b7e-6fc7-417f-a4a7-c8edd7457e9b" _parent_id="__parent_id" _type="Output" id="021b545a-778d-4288-b4d1-e31792a948ae">
+<Record fieldDelimiter="," name="attendees" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __artificialType="_parent_id" __systemManaged="true" name="__parent_id" type="string"/>
+<Field __index="2" __sourcePath="{}/object/attendees/additionalGuests" containerType="SINGLE" label="additionalGuests" name="additionalGuests" type="integer"/>
+<Field __index="3" __sourcePath="{}/object/attendees/comment" containerType="SINGLE" label="comment" name="comment" type="string"/>
+<Field __index="4" __sourcePath="{}/object/attendees/displayName" containerType="SINGLE" label="displayName" name="displayName" type="string"/>
+<Field __index="5" __sourcePath="{}/object/attendees/email" containerType="SINGLE" label="email" name="email" type="string"/>
+<Field __index="6" __sourcePath="{}/object/attendees/optional" containerType="SINGLE" label="optional" name="optional" type="boolean"/>
+<Field __index="7" __sourcePath="{}/object/attendees/organizer" containerType="SINGLE" label="organizer" name="organizer" type="boolean"/>
+<Field __index="8" __sourcePath="{}/object/attendees/resource" containerType="SINGLE" label="resource" name="resource" type="boolean"/>
+<Field __index="9" __sourcePath="{}/object/attendees/self" containerType="SINGLE" label="self" name="self" type="boolean"/>
+</Record>
+</Metadata>
+<Metadata __index="0" __referenceCounter="1" __sourcePath="{}/object" _dataStructure="OBJECT" _id="__id" _type="Input" id="0b177ec3-87ee-4ce4-a60b-71e75c6f60b3">
+<Record fieldDelimiter="," name="Event" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __index="0" __sourcePath="{}/object/description" containerType="SINGLE" label="description" name="description" type="string"/>
+<Field __index="1" __sourcePath="{}/object/endTime" containerType="SINGLE" label="endTime" name="endTime" type="date"/>
+<Field __index="2" __sourcePath="{}/object/id" containerType="SINGLE" label="id" name="id" type="string"/>
+<Field __index="3" __sourcePath="{}/object/location" containerType="SINGLE" label="location" name="location" type="string"/>
+<Field __index="4" __sourcePath="{}/object/metadata/connections/activities" containerType="SINGLE" label="activities" name="activities" type="string"/>
+<Field __index="5" __sourcePath="{}/object/metadata/connections/albums" containerType="SINGLE" label="albums" name="albums" type="string"/>
+<Field __index="6" __sourcePath="{}/object/metadata/connections/books" containerType="SINGLE" label="books" name="books" type="string"/>
+<Field __index="7" __sourcePath="{}/object/metadata/connections/events" containerType="SINGLE" label="events" name="events" type="string"/>
+<Field __index="8" __sourcePath="{}/object/metadata/connections/family" containerType="SINGLE" label="family" name="family" type="string"/>
+<Field __index="9" __sourcePath="{}/object/metadata/connections/feed" containerType="SINGLE" label="feed" name="feed" type="string"/>
+<Field __index="10" __sourcePath="{}/object/metadata/connections/friends" containerType="SINGLE" label="friends" name="friends" type="string"/>
+<Field __index="11" __sourcePath="{}/object/metadata/connections/groups" containerType="SINGLE" label="groups" name="groups" type="string"/>
+<Field __index="12" __sourcePath="{}/object/metadata/connections/home" containerType="SINGLE" label="home" name="home" type="string"/>
+<Field __index="13" __sourcePath="{}/object/metadata/connections/inbox" containerType="SINGLE" label="inbox" name="inbox" type="string"/>
+<Field __index="14" __sourcePath="{}/object/metadata/connections/interests" containerType="SINGLE" label="interests" name="interests" type="string"/>
+<Field __index="15" __sourcePath="{}/object/metadata/connections/likes" containerType="SINGLE" label="likes" name="likes" type="string"/>
+<Field __index="16" __sourcePath="{}/object/metadata/connections/links" containerType="SINGLE" label="links" name="links" type="string"/>
+<Field __index="17" __sourcePath="{}/object/metadata/connections/movies" containerType="SINGLE" label="movies" name="movies" type="string"/>
+<Field __index="18" __sourcePath="{}/object/metadata/connections/music" containerType="SINGLE" label="music" name="music" type="string"/>
+<Field __index="19" __sourcePath="{}/object/metadata/connections/notes" containerType="SINGLE" label="notes" name="notes" type="string"/>
+<Field __index="20" __sourcePath="{}/object/metadata/connections/outbox" containerType="SINGLE" label="outbox" name="outbox" type="string"/>
+<Field __index="21" __sourcePath="{}/object/metadata/connections/photos" containerType="SINGLE" label="photos" name="photos" type="string"/>
+<Field __index="22" __sourcePath="{}/object/metadata/connections/picture" containerType="SINGLE" label="picture" name="picture" type="string"/>
+<Field __index="23" __sourcePath="{}/object/metadata/connections/posts" containerType="SINGLE" label="posts" name="posts" type="string"/>
+<Field __index="24" __sourcePath="{}/object/metadata/connections/statuses" containerType="SINGLE" label="statuses" name="statuses" type="string"/>
+<Field __index="25" __sourcePath="{}/object/metadata/connections/tagged" containerType="SINGLE" label="tagged" name="tagged" type="string"/>
+<Field __index="26" __sourcePath="{}/object/metadata/connections/television" containerType="SINGLE" label="television" name="television" type="string"/>
+<Field __index="27" __sourcePath="{}/object/metadata/connections/updates" containerType="SINGLE" label="updates" name="updates" type="string"/>
+<Field __index="28" __sourcePath="{}/object/metadata/connections/videos" containerType="SINGLE" label="videos" name="videos" type="string"/>
+<Field __index="29" __sourcePath="{}/object/name" containerType="SINGLE" label="name" name="name" type="string"/>
+<Field __index="30" __sourcePath="{}/object/owner/id" containerType="SINGLE" label="id" name="id_1" type="string"/>
+<Field __index="31" __sourcePath="{}/object/owner/metadata/connections/activities" containerType="SINGLE" label="activities" name="activities_1" type="string"/>
+<Field __index="32" __sourcePath="{}/object/owner/metadata/connections/albums" containerType="SINGLE" label="albums" name="albums_1" type="string"/>
+<Field __index="33" __sourcePath="{}/object/owner/metadata/connections/books" containerType="SINGLE" label="books" name="books_1" type="string"/>
+<Field __index="34" __sourcePath="{}/object/owner/metadata/connections/events" containerType="SINGLE" label="events" name="events_1" type="string"/>
+<Field __index="35" __sourcePath="{}/object/owner/metadata/connections/family" containerType="SINGLE" label="family" name="family_1" type="string"/>
+<Field __index="36" __sourcePath="{}/object/owner/metadata/connections/feed" containerType="SINGLE" label="feed" name="feed_1" type="string"/>
+<Field __index="37" __sourcePath="{}/object/owner/metadata/connections/friends" containerType="SINGLE" label="friends" name="friends_1" type="string"/>
+<Field __index="38" __sourcePath="{}/object/owner/metadata/connections/groups" containerType="SINGLE" label="groups" name="groups_1" type="string"/>
+<Field __index="39" __sourcePath="{}/object/owner/metadata/connections/home" containerType="SINGLE" label="home" name="home_1" type="string"/>
+<Field __index="40" __sourcePath="{}/object/owner/metadata/connections/inbox" containerType="SINGLE" label="inbox" name="inbox_1" type="string"/>
+<Field __index="41" __sourcePath="{}/object/owner/metadata/connections/interests" containerType="SINGLE" label="interests" name="interests_1" type="string"/>
+<Field __index="42" __sourcePath="{}/object/owner/metadata/connections/likes" containerType="SINGLE" label="likes" name="likes_1" type="string"/>
+<Field __index="43" __sourcePath="{}/object/owner/metadata/connections/links" containerType="SINGLE" label="links" name="links_1" type="string"/>
+<Field __index="44" __sourcePath="{}/object/owner/metadata/connections/movies" containerType="SINGLE" label="movies" name="movies_1" type="string"/>
+<Field __index="45" __sourcePath="{}/object/owner/metadata/connections/music" containerType="SINGLE" label="music" name="music_1" type="string"/>
+<Field __index="46" __sourcePath="{}/object/owner/metadata/connections/notes" containerType="SINGLE" label="notes" name="notes_1" type="string"/>
+<Field __index="47" __sourcePath="{}/object/owner/metadata/connections/outbox" containerType="SINGLE" label="outbox" name="outbox_1" type="string"/>
+<Field __index="48" __sourcePath="{}/object/owner/metadata/connections/photos" containerType="SINGLE" label="photos" name="photos_1" type="string"/>
+<Field __index="49" __sourcePath="{}/object/owner/metadata/connections/picture" containerType="SINGLE" label="picture" name="picture_1" type="string"/>
+<Field __index="50" __sourcePath="{}/object/owner/metadata/connections/posts" containerType="SINGLE" label="posts" name="posts_1" type="string"/>
+<Field __index="51" __sourcePath="{}/object/owner/metadata/connections/statuses" containerType="SINGLE" label="statuses" name="statuses_1" type="string"/>
+<Field __index="52" __sourcePath="{}/object/owner/metadata/connections/tagged" containerType="SINGLE" label="tagged" name="tagged_1" type="string"/>
+<Field __index="53" __sourcePath="{}/object/owner/metadata/connections/television" containerType="SINGLE" label="television" name="television_1" type="string"/>
+<Field __index="54" __sourcePath="{}/object/owner/metadata/connections/updates" containerType="SINGLE" label="updates" name="updates_1" type="string"/>
+<Field __index="55" __sourcePath="{}/object/owner/metadata/connections/videos" containerType="SINGLE" label="videos" name="videos_1" type="string"/>
+<Field __index="56" __sourcePath="{}/object/owner/name" containerType="SINGLE" label="name" name="name_1" type="string"/>
+<Field __index="57" __sourcePath="{}/object/owner/type" containerType="SINGLE" label="type" name="type" type="string"/>
+<Field __index="58" __sourcePath="{}/object/privacy" containerType="SINGLE" label="privacy" name="privacy" type="string"/>
+<Field __index="59" __sourcePath="{}/object/rsvpStatus" containerType="SINGLE" label="rsvpStatus" name="rsvpStatus" type="string"/>
+<Field __index="60" __sourcePath="{}/object/startTime" containerType="SINGLE" label="startTime" name="startTime" type="date"/>
+<Field __index="61" __sourcePath="{}/object/type" containerType="SINGLE" label="type" name="type_1" type="string"/>
+<Field __index="62" __sourcePath="{}/object/updatedTime" containerType="SINGLE" label="updatedTime" name="updatedTime" type="date"/>
+<Field __index="63" __sourcePath="{}/object/venue/city" containerType="SINGLE" label="city" name="city" type="string"/>
+<Field __index="64" __sourcePath="{}/object/venue/country" containerType="SINGLE" label="country" name="country" type="string"/>
+<Field __index="65" __sourcePath="{}/object/venue/latitude" containerType="SINGLE" label="latitude" name="latitude" type="number"/>
+<Field __index="66" __sourcePath="{}/object/venue/longitude" containerType="SINGLE" label="longitude" name="longitude" type="number"/>
+<Field __index="67" __sourcePath="{}/object/venue/state" containerType="SINGLE" label="state" name="state" type="string"/>
+<Field __index="68" __sourcePath="{}/object/venue/street" containerType="SINGLE" label="street" name="street" type="string"/>
+</Record>
+</Metadata>
+<Metadata __index="0" __referenceCounter="1" __sourcePath="{}/object" _dataStructure="OBJECT" _id="__id" _type="Output" id="06b26b7e-6fc7-417f-a4a7-c8edd7457e9b">
+<Record fieldDelimiter="," name="Event" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __index="0" __sourcePath="{}/object/ICalUID" containerType="SINGLE" label="ICalUID" name="ICalUID" type="string"/>
+<Field __index="1" __sourcePath="{}/object/anyoneCanAddSelf" containerType="SINGLE" label="anyoneCanAddSelf" name="anyoneCanAddSelf" type="boolean"/>
+<Field __index="10" __sourcePath="{}/object/colorId" containerType="SINGLE" label="colorId" name="colorId" type="string"/>
+<Field __index="11" __sourcePath="{}/object/created/timeZoneShift" containerType="SINGLE" label="timeZoneShift" name="timeZoneShift" type="integer"/>
+<Field __index="12" __sourcePath="{}/object/created/value" containerType="SINGLE" label="value" name="value" type="long"/>
+<Field __index="13" __sourcePath="{}/object/creator/displayName" containerType="SINGLE" label="displayName" name="displayName" type="string"/>
+<Field __index="14" __sourcePath="{}/object/creator/email" containerType="SINGLE" label="email" name="email" type="string"/>
+<Field __index="15" __sourcePath="{}/object/creator/self" containerType="SINGLE" label="self" name="self" type="boolean"/>
+<Field __index="16" __sourcePath="{}/object/description" containerType="SINGLE" label="description" name="description" type="string"/>
+<Field __index="17" __sourcePath="{}/object/end/date" containerType="SINGLE" label="date" name="date" type="string"/>
+<Field __index="18" __sourcePath="{}/object/end/dateTime/timeZoneShift" containerType="SINGLE" label="timeZoneShift" name="timeZoneShift_1" type="integer"/>
+<Field __index="19" __sourcePath="{}/object/end/dateTime/value" containerType="SINGLE" label="value" name="value_1" type="long"/>
+<Field __index="20" __sourcePath="{}/object/end/timeZone" containerType="SINGLE" label="timeZone" name="timeZone" type="string"/>
+<Field __index="21" __sourcePath="{}/object/etag" containerType="SINGLE" label="etag" name="etag" type="string"/>
+<Field __index="26" __sourcePath="{}/object/guestsCanInviteOthers" containerType="SINGLE" label="guestsCanInviteOthers" name="guestsCanInviteOthers" type="boolean"/>
+<Field __index="27" __sourcePath="{}/object/guestsCanModify" containerType="SINGLE" label="guestsCanModify" name="guestsCanModify" type="boolean"/>
+<Field __index="28" __sourcePath="{}/object/guestsCanSeeOtherGuests" containerType="SINGLE" label="guestsCanSeeOtherGuests" name="guestsCanSeeOtherGuests" type="boolean"/>
+<Field __index="29" __sourcePath="{}/object/htmlLink" containerType="SINGLE" label="htmlLink" name="htmlLink" type="string"/>
+<Field __index="30" __sourcePath="{}/object/id" containerType="SINGLE" label="id" name="id" type="string"/>
+<Field __index="31" __sourcePath="{}/object/location" containerType="SINGLE" label="location" name="location" type="string"/>
+<Field __index="32" __sourcePath="{}/object/organizer/displayName" containerType="SINGLE" label="displayName" name="displayName_1" type="string"/>
+<Field __index="33" __sourcePath="{}/object/organizer/email" containerType="SINGLE" label="email" name="email_1" type="string"/>
+<Field __index="34" __sourcePath="{}/object/originalStartTime/date" containerType="SINGLE" label="date" name="date_1" type="string"/>
+<Field __index="35" __sourcePath="{}/object/originalStartTime/dateTime/timeZoneShift" containerType="SINGLE" label="timeZoneShift" name="timeZoneShift_2" type="integer"/>
+<Field __index="36" __sourcePath="{}/object/originalStartTime/dateTime/value" containerType="SINGLE" label="value" name="value_2" type="long"/>
+<Field __index="37" __sourcePath="{}/object/originalStartTime/timeZone" containerType="SINGLE" label="timeZone" name="timeZone_1" type="string"/>
+<Field __index="38" __sourcePath="{}/object/privateCopy" containerType="SINGLE" label="privateCopy" name="privateCopy" type="boolean"/>
+<Field __index="39" __sourcePath="{}/object/recurrence" containerType="list" label="recurrence" name="recurrence" type="string"/>
+<Field __index="40" __sourcePath="{}/object/recurringEventId" containerType="SINGLE" label="recurringEventId" name="recurringEventId" type="string"/>
+<Field __index="43" __sourcePath="{}/object/reminders/useDefault" containerType="SINGLE" label="useDefault" name="useDefault" type="boolean"/>
+<Field __index="44" __sourcePath="{}/object/sequence" containerType="SINGLE" label="sequence" name="sequence" type="integer"/>
+<Field __index="45" __sourcePath="{}/object/start/date" containerType="SINGLE" label="date" name="date_2" type="string"/>
+<Field __index="46" __sourcePath="{}/object/start/dateTime/timeZoneShift" containerType="SINGLE" label="timeZoneShift" name="timeZoneShift_3" type="integer"/>
+<Field __index="47" __sourcePath="{}/object/start/dateTime/value" containerType="SINGLE" label="value" name="value_3" type="long"/>
+<Field __index="48" __sourcePath="{}/object/start/timeZone" containerType="SINGLE" label="timeZone" name="timeZone_2" type="string"/>
+<Field __index="49" __sourcePath="{}/object/status" containerType="SINGLE" label="status" name="status" type="string"/>
+<Field __index="50" __sourcePath="{}/object/summary" containerType="SINGLE" label="summary" name="summary" type="string"/>
+<Field __index="51" __sourcePath="{}/object/transparency" containerType="SINGLE" label="transparency" name="transparency" type="string"/>
+<Field __index="52" __sourcePath="{}/object/updated/timeZoneShift" containerType="SINGLE" label="timeZoneShift" name="timeZoneShift_4" type="integer"/>
+<Field __index="53" __sourcePath="{}/object/updated/value" containerType="SINGLE" label="value" name="value_4" type="long"/>
+<Field __index="54" __sourcePath="{}/object/visibility" containerType="SINGLE" label="visibility" name="visibility" type="string"/>
+</Record>
+</Metadata>
+<Metadata __index="41" __referenceCounter="0" __sourcePath="{}/object/reminders/overrides" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _metadataParentId="06b26b7e-6fc7-417f-a4a7-c8edd7457e9b" _parent_id="__parent_id" _type="Output" id="e58eb2b7-7a38-4dd8-a3e3-a6efd8b34f7a">
+<Record fieldDelimiter="," name="overrides" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __artificialType="_parent_id" __systemManaged="true" name="__parent_id" type="string"/>
+<Field __index="41" __sourcePath="{}/object/reminders/overrides/method" containerType="SINGLE" label="method" name="method" type="string"/>
+<Field __index="42" __sourcePath="{}/object/reminders/overrides/minutes" containerType="SINGLE" label="minutes" name="minutes" type="integer"/>
+</Record>
+</Metadata>
+<Metadata __index="22" __referenceCounter="0" __sourcePath="{}/object/extendedProperties/private" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _metadataParentId="06b26b7e-6fc7-417f-a4a7-c8edd7457e9b" _parent_id="__parent_id" _type="Output" id="28abe872-1782-44f9-b701-ecd06db58a07">
+<Record fieldDelimiter="," name="private" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __artificialType="_parent_id" __systemManaged="true" name="__parent_id" type="string"/>
+<Field __index="22" __sourcePath="{}/object/extendedProperties/private/key" containerType="SINGLE" label="key" name="key" type="string"/>
+<Field __index="23" __sourcePath="{}/object/extendedProperties/private/value" containerType="SINGLE" label="value" name="value" type="string"/>
+</Record>
+</Metadata>
+<Metadata __index="24" __referenceCounter="0" __sourcePath="{}/object/extendedProperties/shared" _dataStructure="SINGLE_DIMENSIONAL_COLLECTION" _id="__id" _metadataParentId="06b26b7e-6fc7-417f-a4a7-c8edd7457e9b" _parent_id="__parent_id" _type="Output" id="66fdb528-ed0d-4aa0-9ea5-f13dedf65310">
+<Record fieldDelimiter="," name="shared" recordDelimiter="\n\\|\r\n\\|\r" type="delimited">
+<Field __artificialType="_id" __systemManaged="true" name="__id" type="string"/>
+<Field __artificialType="_parent_id" __systemManaged="true" name="__parent_id" type="string"/>
+<Field __index="24" __sourcePath="{}/object/extendedProperties/shared/key" containerType="SINGLE" label="key" name="key" type="string"/>
+<Field __index="25" __sourcePath="{}/object/extendedProperties/shared/value" containerType="SINGLE" label="value" name="value" type="string"/>
+</Record>
+</Metadata>
+<Dictionary>
+<Entry id="DictionaryEntry0" input="true" name="inputPayload" output="false" type="object"/>
+<Entry id="DictionaryEntry1" input="false" name="outputPayload" output="true" type="object"/>
+</Dictionary>
+</Global>
+<Phase number="0">
+<Node enabled="enabled" fileURL="dict:inputPayload" guiName="Pojo READER" guiX="20" guiY="20" id="BEAN_READER0" type="BEAN_READER">
+<attr name="mapping"><![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Context outPort="0" sequenceField="__id" xpath=".">
+  <Mapping cloverField="description" trim="true" xpath="description"/>
+  <Mapping cloverField="endTime" trim="true" xpath="endTime"/>
+  <Mapping cloverField="id" trim="true" xpath="id"/>
+  <Mapping cloverField="location" trim="true" xpath="location"/>
+  <Mapping cloverField="activities" trim="true" xpath="metadata/connections/activities"/>
+  <Mapping cloverField="albums" trim="true" xpath="metadata/connections/albums"/>
+  <Mapping cloverField="books" trim="true" xpath="metadata/connections/books"/>
+  <Mapping cloverField="events" trim="true" xpath="metadata/connections/events"/>
+  <Mapping cloverField="family" trim="true" xpath="metadata/connections/family"/>
+  <Mapping cloverField="feed" trim="true" xpath="metadata/connections/feed"/>
+  <Mapping cloverField="friends" trim="true" xpath="metadata/connections/friends"/>
+  <Mapping cloverField="groups" trim="true" xpath="metadata/connections/groups"/>
+  <Mapping cloverField="home" trim="true" xpath="metadata/connections/home"/>
+  <Mapping cloverField="inbox" trim="true" xpath="metadata/connections/inbox"/>
+  <Mapping cloverField="interests" trim="true" xpath="metadata/connections/interests"/>
+  <Mapping cloverField="likes" trim="true" xpath="metadata/connections/likes"/>
+  <Mapping cloverField="links" trim="true" xpath="metadata/connections/links"/>
+  <Mapping cloverField="movies" trim="true" xpath="metadata/connections/movies"/>
+  <Mapping cloverField="music" trim="true" xpath="metadata/connections/music"/>
+  <Mapping cloverField="notes" trim="true" xpath="metadata/connections/notes"/>
+  <Mapping cloverField="outbox" trim="true" xpath="metadata/connections/outbox"/>
+  <Mapping cloverField="photos" trim="true" xpath="metadata/connections/photos"/>
+  <Mapping cloverField="picture" trim="true" xpath="metadata/connections/picture"/>
+  <Mapping cloverField="posts" trim="true" xpath="metadata/connections/posts"/>
+  <Mapping cloverField="statuses" trim="true" xpath="metadata/connections/statuses"/>
+  <Mapping cloverField="tagged" trim="true" xpath="metadata/connections/tagged"/>
+  <Mapping cloverField="television" trim="true" xpath="metadata/connections/television"/>
+  <Mapping cloverField="updates" trim="true" xpath="metadata/connections/updates"/>
+  <Mapping cloverField="videos" trim="true" xpath="metadata/connections/videos"/>
+  <Mapping cloverField="name" trim="true" xpath="name"/>
+  <Mapping cloverField="id_1" trim="true" xpath="owner/id"/>
+  <Mapping cloverField="activities_1" trim="true" xpath="owner/metadata/connections/activities"/>
+  <Mapping cloverField="albums_1" trim="true" xpath="owner/metadata/connections/albums"/>
+  <Mapping cloverField="books_1" trim="true" xpath="owner/metadata/connections/books"/>
+  <Mapping cloverField="events_1" trim="true" xpath="owner/metadata/connections/events"/>
+  <Mapping cloverField="family_1" trim="true" xpath="owner/metadata/connections/family"/>
+  <Mapping cloverField="feed_1" trim="true" xpath="owner/metadata/connections/feed"/>
+  <Mapping cloverField="friends_1" trim="true" xpath="owner/metadata/connections/friends"/>
+  <Mapping cloverField="groups_1" trim="true" xpath="owner/metadata/connections/groups"/>
+  <Mapping cloverField="home_1" trim="true" xpath="owner/metadata/connections/home"/>
+  <Mapping cloverField="inbox_1" trim="true" xpath="owner/metadata/connections/inbox"/>
+  <Mapping cloverField="interests_1" trim="true" xpath="owner/metadata/connections/interests"/>
+  <Mapping cloverField="likes_1" trim="true" xpath="owner/metadata/connections/likes"/>
+  <Mapping cloverField="links_1" trim="true" xpath="owner/metadata/connections/links"/>
+  <Mapping cloverField="movies_1" trim="true" xpath="owner/metadata/connections/movies"/>
+  <Mapping cloverField="music_1" trim="true" xpath="owner/metadata/connections/music"/>
+  <Mapping cloverField="notes_1" trim="true" xpath="owner/metadata/connections/notes"/>
+  <Mapping cloverField="outbox_1" trim="true" xpath="owner/metadata/connections/outbox"/>
+  <Mapping cloverField="photos_1" trim="true" xpath="owner/metadata/connections/photos"/>
+  <Mapping cloverField="picture_1" trim="true" xpath="owner/metadata/connections/picture"/>
+  <Mapping cloverField="posts_1" trim="true" xpath="owner/metadata/connections/posts"/>
+  <Mapping cloverField="statuses_1" trim="true" xpath="owner/metadata/connections/statuses"/>
+  <Mapping cloverField="tagged_1" trim="true" xpath="owner/metadata/connections/tagged"/>
+  <Mapping cloverField="television_1" trim="true" xpath="owner/metadata/connections/television"/>
+  <Mapping cloverField="updates_1" trim="true" xpath="owner/metadata/connections/updates"/>
+  <Mapping cloverField="videos_1" trim="true" xpath="owner/metadata/connections/videos"/>
+  <Mapping cloverField="name_1" trim="true" xpath="owner/name"/>
+  <Mapping cloverField="type" trim="true" xpath="owner/type"/>
+  <Mapping cloverField="privacy" trim="true" xpath="privacy"/>
+  <Mapping cloverField="rsvpStatus" trim="true" xpath="rsvpStatus"/>
+  <Mapping cloverField="startTime" trim="true" xpath="startTime"/>
+  <Mapping cloverField="type_1" trim="true" xpath="type"/>
+  <Mapping cloverField="updatedTime" trim="true" xpath="updatedTime"/>
+  <Mapping cloverField="city" trim="true" xpath="venue/city"/>
+  <Mapping cloverField="country" trim="true" xpath="venue/country"/>
+  <Mapping cloverField="latitude" trim="true" xpath="venue/latitude"/>
+  <Mapping cloverField="longitude" trim="true" xpath="venue/longitude"/>
+  <Mapping cloverField="state" trim="true" xpath="venue/state"/>
+  <Mapping cloverField="street" trim="true" xpath="venue/street"/>
+</Context>
+]]></attr>
+<attr name="_data_format"><![CDATA[JAVA]]></attr>
+<attr name="schema"><![CDATA[<?xml version="1.0" encoding="UTF-8"?><schema-object>
+  <typed-object-ref type-ref="com.restfb.types.Event"/>
+  <typed-object type="java.lang.Double"/>
+  <typed-object type="java.lang.String"/>
+  <typed-object type="com.restfb.types.Venue">
+    <typed-object-ref name="city" type-ref="java.lang.String"/>
+    <typed-object-ref name="country" type-ref="java.lang.String"/>
+    <typed-object-ref name="latitude" type-ref="java.lang.Double"/>
+    <typed-object-ref name="longitude" type-ref="java.lang.Double"/>
+    <typed-object-ref name="state" type-ref="java.lang.String"/>
+    <typed-object-ref name="street" type-ref="java.lang.String"/>
+  </typed-object>
+  <typed-object type="java.util.Date"/>
+  <typed-object type="com.restfb.types.NamedFacebookType">
+    <typed-object-ref name="id" type-ref="java.lang.String"/>
+    <typed-object-ref name="metadata" type-ref="com.restfb.types.FacebookType$Metadata"/>
+    <typed-object-ref name="name" type-ref="java.lang.String"/>
+    <typed-object-ref name="type" type-ref="java.lang.String"/>
+  </typed-object>
+  <typed-object type="com.restfb.types.Event">
+    <typed-object-ref name="description" type-ref="java.lang.String"/>
+    <typed-object-ref name="endTime" type-ref="java.util.Date"/>
+    <typed-object-ref name="id" type-ref="java.lang.String"/>
+    <typed-object-ref name="location" type-ref="java.lang.String"/>
+    <typed-object-ref name="metadata" type-ref="com.restfb.types.FacebookType$Metadata"/>
+    <typed-object-ref name="name" type-ref="java.lang.String"/>
+    <typed-object-ref name="owner" type-ref="com.restfb.types.NamedFacebookType"/>
+    <typed-object-ref name="privacy" type-ref="java.lang.String"/>
+    <typed-object-ref name="rsvpStatus" type-ref="java.lang.String"/>
+    <typed-object-ref name="startTime" type-ref="java.util.Date"/>
+    <typed-object-ref name="type" type-ref="java.lang.String"/>
+    <typed-object-ref name="updatedTime" type-ref="java.util.Date"/>
+    <typed-object-ref name="venue" type-ref="com.restfb.types.Venue"/>
+  </typed-object>
+  <typed-object type="com.restfb.types.FacebookType$Metadata$Connections">
+    <typed-object-ref name="activities" type-ref="java.lang.String"/>
+    <typed-object-ref name="albums" type-ref="java.lang.String"/>
+    <typed-object-ref name="books" type-ref="java.lang.String"/>
+    <typed-object-ref name="events" type-ref="java.lang.String"/>
+    <typed-object-ref name="family" type-ref="java.lang.String"/>
+    <typed-object-ref name="feed" type-ref="java.lang.String"/>
+    <typed-object-ref name="friends" type-ref="java.lang.String"/>
+    <typed-object-ref name="groups" type-ref="java.lang.String"/>
+    <typed-object-ref name="home" type-ref="java.lang.String"/>
+    <typed-object-ref name="inbox" type-ref="java.lang.String"/>
+    <typed-object-ref name="interests" type-ref="java.lang.String"/>
+    <typed-object-ref name="likes" type-ref="java.lang.String"/>
+    <typed-object-ref name="links" type-ref="java.lang.String"/>
+    <typed-object-ref name="movies" type-ref="java.lang.String"/>
+    <typed-object-ref name="music" type-ref="java.lang.String"/>
+    <typed-object-ref name="notes" type-ref="java.lang.String"/>
+    <typed-object-ref name="outbox" type-ref="java.lang.String"/>
+    <typed-object-ref name="photos" type-ref="java.lang.String"/>
+    <typed-object-ref name="picture" type-ref="java.lang.String"/>
+    <typed-object-ref name="posts" type-ref="java.lang.String"/>
+    <typed-object-ref name="statuses" type-ref="java.lang.String"/>
+    <typed-object-ref name="tagged" type-ref="java.lang.String"/>
+    <typed-object-ref name="television" type-ref="java.lang.String"/>
+    <typed-object-ref name="updates" type-ref="java.lang.String"/>
+    <typed-object-ref name="videos" type-ref="java.lang.String"/>
+  </typed-object>
+  <typed-object type="com.restfb.types.FacebookType$Metadata">
+    <typed-object-ref name="connections" type-ref="com.restfb.types.FacebookType$Metadata$Connections"/>
+  </typed-object>
+</schema-object>
+]]></attr>
+<attr name="__metadata"><![CDATA[true]]></attr>
+</Node>
+<Node cacheInMemory="true" enabled="enabled" fileURL="dict:outputPayload" guiName="Pojo WRITER" guiX="900" guiY="20" id="BEAN_WRITER0" type="BEAN_WRITER">
+<attr name="mapping"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<object xmlns:clover="http://www.cloveretl.com/ns/xmlmapping" clover:inPort="0">
+  <ICalUID>$0.ICalUID</ICalUID>
+  <anyoneCanAddSelf>$0.anyoneCanAddSelf</anyoneCanAddSelf>
+  <colorId>$0.colorId</colorId>
+  <created>
+    <timeZoneShift>$0.timeZoneShift</timeZoneShift>
+    <value>$0.value</value>
+  </created>
+  <creator>
+    <displayName>$0.displayName</displayName>
+    <email>$0.email</email>
+    <self>$0.self</self>
+  </creator>
+  <description>$0.description</description>
+  <end>
+    <date>$0.date</date>
+    <dateTime>
+      <timeZoneShift>$0.timeZoneShift_1</timeZoneShift>
+      <value>$0.value_1</value>
+    </dateTime>
+    <timeZone>$0.timeZone</timeZone>
+  </end>
+  <etag>$0.etag</etag>
+  <guestsCanInviteOthers>$0.guestsCanInviteOthers</guestsCanInviteOthers>
+  <guestsCanModify>$0.guestsCanModify</guestsCanModify>
+  <guestsCanSeeOtherGuests>$0.guestsCanSeeOtherGuests</guestsCanSeeOtherGuests>
+  <htmlLink>$0.htmlLink</htmlLink>
+  <id>$0.id</id>
+  <location>$0.location</location>
+  <organizer>
+    <displayName>$0.displayName_1</displayName>
+    <email>$0.email_1</email>
+  </organizer>
+  <originalStartTime>
+    <date>$0.date_1</date>
+    <dateTime>
+      <timeZoneShift>$0.timeZoneShift_2</timeZoneShift>
+      <value>$0.value_2</value>
+    </dateTime>
+    <timeZone>$0.timeZone_1</timeZone>
+  </originalStartTime>
+  <privateCopy>$0.privateCopy</privateCopy>
+  <clover:collection clover:name="recurrence">$0.recurrence</clover:collection>
+  <recurringEventId>$0.recurringEventId</recurringEventId>
+  <reminders>
+    <useDefault>$0.useDefault</useDefault>
+  </reminders>
+  <sequence>$0.sequence</sequence>
+  <start>
+    <date>$0.date_2</date>
+    <dateTime>
+      <timeZoneShift>$0.timeZoneShift_3</timeZoneShift>
+      <value>$0.value_3</value>
+    </dateTime>
+    <timeZone>$0.timeZone_2</timeZone>
+  </start>
+  <status>$0.status</status>
+  <summary>$0.summary</summary>
+  <transparency>$0.transparency</transparency>
+  <updated>
+    <timeZoneShift>$0.timeZoneShift_4</timeZoneShift>
+    <value>$0.value_4</value>
+  </updated>
+  <visibility>$0.visibility</visibility>
+</object>]]></attr>
+<attr name="_data_format"><![CDATA[JAVA]]></attr>
+<attr name="schema"><![CDATA[<?xml version="1.0" encoding="UTF-8"?><schema-object>
+  <typed-object-ref type-ref="org.mule.module.google.calendar.model.Event"/>
+  <typed-object type="org.mule.module.google.calendar.model.ExtendedProperties">
+    <schema-map name="private" type="java.util.Map">
+      <typed-object-ref type-ref="java.lang.String"/>
+      <typed-object-ref type-ref="java.lang.String"/>
+    </schema-map>
+    <schema-map name="shared" type="java.util.Map">
+      <typed-object-ref type-ref="java.lang.String"/>
+      <typed-object-ref type-ref="java.lang.String"/>
+    </schema-map>
+  </typed-object>
+  <typed-object type="org.mule.module.google.calendar.model.Reminders">
+    <schema-collection name="overrides" type="java.util.List">
+      <typed-object-ref type-ref="org.mule.module.google.calendar.model.EventReminder"/>
+    </schema-collection>
+    <typed-object-ref name="useDefault" type-ref="java.lang.Boolean"/>
+  </typed-object>
+  <typed-object type="java.lang.Boolean"/>
+  <typed-object type="org.mule.module.google.calendar.model.Organizer">
+    <typed-object-ref name="displayName" type-ref="java.lang.String"/>
+    <typed-object-ref name="email" type-ref="java.lang.String"/>
+  </typed-object>
+  <typed-object type="org.mule.modules.google.api.datetime.DateTime">
+    <typed-object-ref name="timeZoneShift" type-ref="java.lang.Integer"/>
+    <typed-object-ref name="value" type-ref="long"/>
+  </typed-object>
+  <typed-object type="java.lang.Integer"/>
+  <typed-object type="java.lang.String"/>
+  <typed-object type="org.mule.module.google.calendar.model.Creator">
+    <typed-object-ref name="displayName" type-ref="java.lang.String"/>
+    <typed-object-ref name="email" type-ref="java.lang.String"/>
+    <typed-object-ref name="self" type-ref="java.lang.Boolean"/>
+  </typed-object>
+  <typed-object type="long"/>
+  <typed-object type="org.mule.module.google.calendar.model.EventAttendee">
+    <typed-object-ref name="additionalGuests" type-ref="java.lang.Integer"/>
+    <typed-object-ref name="comment" type-ref="java.lang.String"/>
+    <typed-object-ref name="displayName" type-ref="java.lang.String"/>
+    <typed-object-ref name="email" type-ref="java.lang.String"/>
+    <typed-object-ref name="optional" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="organizer" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="resource" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="self" type-ref="java.lang.Boolean"/>
+  </typed-object>
+  <typed-object type="org.mule.module.google.calendar.model.EventDateTime">
+    <typed-object-ref name="date" type-ref="java.lang.String"/>
+    <typed-object-ref name="dateTime" type-ref="org.mule.modules.google.api.datetime.DateTime"/>
+    <typed-object-ref name="timeZone" type-ref="java.lang.String"/>
+  </typed-object>
+  <typed-object type="org.mule.module.google.calendar.model.Event">
+    <typed-object-ref name="ICalUID" type-ref="java.lang.String"/>
+    <typed-object-ref name="anyoneCanAddSelf" type-ref="java.lang.Boolean"/>
+    <schema-collection name="attendees" type="java.util.List">
+      <typed-object-ref type-ref="org.mule.module.google.calendar.model.EventAttendee"/>
+    </schema-collection>
+    <typed-object-ref name="colorId" type-ref="java.lang.String"/>
+    <typed-object-ref name="created" type-ref="org.mule.modules.google.api.datetime.DateTime"/>
+    <typed-object-ref name="creator" type-ref="org.mule.module.google.calendar.model.Creator"/>
+    <typed-object-ref name="description" type-ref="java.lang.String"/>
+    <typed-object-ref name="end" type-ref="org.mule.module.google.calendar.model.EventDateTime"/>
+    <typed-object-ref name="etag" type-ref="java.lang.String"/>
+    <typed-object-ref name="extendedProperties" type-ref="org.mule.module.google.calendar.model.ExtendedProperties"/>
+    <typed-object-ref name="guestsCanInviteOthers" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="guestsCanModify" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="guestsCanSeeOtherGuests" type-ref="java.lang.Boolean"/>
+    <typed-object-ref name="htmlLink" type-ref="java.lang.String"/>
+    <typed-object-ref name="id" type-ref="java.lang.String"/>
+    <typed-object-ref name="location" type-ref="java.lang.String"/>
+    <typed-object-ref name="organizer" type-ref="org.mule.module.google.calendar.model.Organizer"/>
+    <typed-object-ref name="originalStartTime" type-ref="org.mule.module.google.calendar.model.EventDateTime"/>
+    <typed-object-ref name="privateCopy" type-ref="java.lang.Boolean"/>
+    <schema-collection name="recurrence" type="java.util.List">
+      <typed-object-ref type-ref="java.lang.String"/>
+    </schema-collection>
+    <typed-object-ref name="recurringEventId" type-ref="java.lang.String"/>
+    <typed-object-ref name="reminders" type-ref="org.mule.module.google.calendar.model.Reminders"/>
+    <typed-object-ref name="sequence" type-ref="java.lang.Integer"/>
+    <typed-object-ref name="start" type-ref="org.mule.module.google.calendar.model.EventDateTime"/>
+    <typed-object-ref name="status" type-ref="java.lang.String"/>
+    <typed-object-ref name="summary" type-ref="java.lang.String"/>
+    <typed-object-ref name="transparency" type-ref="java.lang.String"/>
+    <typed-object-ref name="updated" type-ref="org.mule.modules.google.api.datetime.DateTime"/>
+    <typed-object-ref name="visibility" type-ref="java.lang.String"/>
+  </typed-object>
+  <typed-object type="org.mule.module.google.calendar.model.EventReminder">
+    <typed-object-ref name="method" type-ref="java.lang.String"/>
+    <typed-object-ref name="minutes" type-ref="java.lang.Integer"/>
+  </typed-object>
+</schema-object>
+]]></attr>
+<attr name="__metadata"><![CDATA[true]]></attr>
+</Node>
+<Node enabled="enabled" guiName="Foreach 'object' -&gt; 'object'" guiX="460" guiY="20" id="FOREACH_OBJECT_OBJECT" transformClass="com.mulesoft.datamapper.transform.MelRecordTransform" type="REFORMAT">
+<attr name="melScript"><![CDATA[//MEL
+//START -> DO NOT REMOVE
+output.__id = input.__id;
+//END -> DO NOT REMOVE
+output.description = input.description;
+output.id = input.id;
+output.location = input.location;
+output.date = (isnull(input.endTime) ? null : date2str(input.endTime, "yyyy-MMM-d HH:mm:ss z"));
+output.value_1 = (isnull(input.endTime) ? null : date2long(input.endTime));
+output.value_2 = (isnull(input.startTime) ? null : date2long(input.startTime));
+output.date_1 = (isnull(input.startTime) ? null : date2str(input.startTime, "yyyy-MMM-d HH:mm:ss z"));]]></attr>
+</Node>
+<Edge debugMode="true" fromNode="BEAN_READER0:0" guiBendpoints="" id="Edge0" inPort="Port 0 (in)" metadata="0b177ec3-87ee-4ce4-a60b-71e75c6f60b3" outPort="Port 0 (out)" toNode="FOREACH_OBJECT_OBJECT:0"/>
+<Edge debugMode="true" fromNode="FOREACH_OBJECT_OBJECT:0" guiBendpoints="" id="Edge1" inPort="Port 0 (in)" metadata="06b26b7e-6fc7-417f-a4a7-c8edd7457e9b" outPort="Port 0 (out)" toNode="BEAN_WRITER0:0"/>
+</Phase>
+</Graph>
